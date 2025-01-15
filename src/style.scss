@@ -1,0 +1,29 @@
+html {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "ES Rebond Grotesque Regular";
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 48px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+}
