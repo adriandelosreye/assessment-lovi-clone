@@ -148,14 +148,23 @@ main {
     &--sub {
       width: 50%;
 
-      p {
-        margin: 0;
+      text-align: center;
+
+      &--subtitle {
+        font-size: 16px;
+        color: #29282499;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        max-width: 220px;
+        margin: 0 auto;
+      }
+
+      & p {
         font-size: 20px;
         line-height: 24px;
         letter-spacing: -1px;
         margin: 0 auto;
         max-width: 180px;
-        text-align: center;
       }
     }
 
@@ -208,6 +217,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   &__title {
     font-size: 64px;
@@ -219,52 +229,196 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 80%;
+
+    &__container {
+      display: flex;
+      gap: 10px;
+      align-items: end;
+      & img {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+      }
+
+      &--right {
+        align-self: flex-end;
+      }
+    }
   }
   &__message {
     padding: 16px 14px;
     background-color: white;
+    border-radius: 24px;
     max-width: 400px;
-
-    &--right {
-      align-self: flex-end;
-    }
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
   }
 }
 
 .recommendation {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  & img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+  }
+
   &__message {
     display: flex;
     flex-direction: column;
     padding: 16px 14px;
     background-color: white;
     max-width: 400px;
+    border-radius: 24px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+
+    &_badge {
+      font-size: 18px;
+      color: blue;
+      line-height: 20px;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+  }
+
+  &__products {
+    display: flex;
+    gap: 8px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      gap: 12px;
+      padding: 24px 16px;
+      border-radius: 24px;
+      position: relative;
+
+      &__value {
+        position: absolute;
+        background-color: #44b77b;
+        border-radius: 16px;
+        text-align: center;
+        padding: 4px 8px;
+
+        & p {
+          font-size: 14px;
+          margin: 0;
+          color: #a1dbbd;
+
+          & span {
+            color: white;
+          }
+        }
+      }
+
+      & img {
+        width: 130px;
+        height: 215px;
+        margin: 0 auto;
+      }
+
+      &__title {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -1px;
+        max-width: 200px;
+        margin: 0;
+      }
+
+      &__price {
+        margin: 0;
+        text-align: start;
+        color: #a4a3a0;
+      }
+    }
   }
 }
 
 .messages__options {
   display: flex;
   flex-direction: column;
+  align-items: end;
+  gap: 8px;
   &__button {
-    background-color: blue;
+    background-color: #5163ff;
     color: white;
-    border-radius: 140px;
+    border-radius: 68px;
     text-align: center;
     font-size: 24px;
-    padding: 12px 28px;
-    margin-top: 20px;
+    padding: 28px;
     border: none;
     cursor: pointer;
+    width: fit-content;
+
+    & p {
+      margin: 0;
+      text-align: end;
+    }
   }
 }
 
 .testimonials {
-  @include mixins.container;
-  margin-top: 6px;
+  margin-top: 8px;
+  width: 100%;
+
+  &__container {
+    @include mixins.container;
+
+    & p {
+      font-size: 52px;
+      font-weight: 400;
+      max-width: 580px;
+      line-height: 48px;
+      letter-spacing: -1px;
+      margin: 0;
+    }
+  }
 }
 
 .questions {
-  @include mixins.container;
-  margin-top: 6px;
+  width: 100%;
+  margin-top: 8px;
+
+  &__container {
+    display: flex;
+    background-color: white;
+    border-radius: 56px;
+    padding: 40px 48px;
+  }
+  &__title {
+    font-size: 52px;
+    font-weight: 400;
+    max-width: 580px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    margin: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: -1px;
+      margin: 0;
+    }
+  }
 }
 
 .state {
