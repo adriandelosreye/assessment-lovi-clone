@@ -1,0 +1,18 @@
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 56px;
+  padding: 40px 48px;
+}
+
+@mixin title($width: 400px) {
+  font-size: 52px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+  max-width: $width;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
