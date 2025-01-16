@@ -8,8 +8,9 @@
   </head>
   <body>
     <header class="header">
+      <a href="#">
       <svg
-        width="92"
+        width="80"
         height="48"
         viewBox="0 0 92 48"
         fill="none"
@@ -27,18 +28,21 @@
           "
         ></path>
       </svg>
+    </a>
       <img src="./images/download-app-store.png" class="header__download" />
     </header>
     <main>
       <section class="hero">
-        <p class="hero__badge">Lóvi Score is here!</p>
-        <h2 class="hero__title">
-          Science-backed AI Cosmetologist you can trust
-        </h2>
-        <h4 class="hero__subtitle">Focused around you and your health</h4>
+        <div class="hero__main">
+          <p class="hero__badge">Lóvi Score is here!</p>
+          <h2 class="hero__title">
+            Science-backed AI Cosmetologist you can trust
+          </h2>
+          <h4 class="hero__subtitle">Focused around you and your health</h4>
+        </div>
         <div class="hero__images">
           <div class="hero__women">
-            <img src="./images/women.png" alt="" />
+            <img src="./images/women3.avif" alt="" />
           </div>
           <div class="hero__phone">
             <img src="./images/phone.png" alt="Phone" />
@@ -50,21 +54,27 @@
         </div>
       </section>
       <section class="info">
-        <p>Lóvi is a comprehensive approach to your skin health.</p>
-        <p>
-          Set your goals and build a best-fit skincare routine, track changes
-          with face scanner, check cosmetics safety.
-        </p>
-        <p>Get all your questions answered with science- backed AI.</p>
+        <div class="info__container">
+          <p>Lóvi is a comprehensive approach to your skin health.</p>
+          <p>
+            Set your goals and build a best-fit skincare routine, track changes
+            with face scanner, check cosmetics safety.
+          </p>
+          <p>Get all your questions answered with science- backed AI.</p>
+        </div>
       </section>
       <section class="features">
         <div class="features__primary">
           <div class="features__primary__media">
-            <img src="./images/phone1.avif" alt="Phone" />
+            <div class="card left">
+              <img src="./images/phone1.avif" alt="Phone" />
+            </div>
             <div class="features__primary__video">
               <video src="./videos/phone.mp4" autoplay muted loop></video>
             </div>
-            <img src="./images/phone2.avif" alt="Phone" />
+            <div class="card right">
+              <img src="./images/phone2.avif" alt="Phone" />
+            </div>
           </div>
           <div class="features__primary__text">
             <h3 class="features__primary__title">
@@ -202,6 +212,7 @@
             <p>See the condition of 11+ skin issues</p>
           </div>
           <div class="features__primary features__primary--sub">
+            <img src="./images/calendar.png" alt="calendar" />
             <p>Track how your skin changes over time</p>
           </div>
         </div>
@@ -544,6 +555,7 @@
         </div>
         <div class="features__section">
           <div class="features__primary features__primary--sub">
+            <img class="features__primary--sub__image" src="./images/graph.png" alt="graph" />
             <p>Best in class skincare assistant</p>
             <span class="features__primary--sub--subtitle">Lóvi AI surpassed the pass mark on US Medical License Exam</p>
           </div>
@@ -581,29 +593,34 @@
           </div>
         </div>
       </section>
-      <section class="image__section">
-        <img src="./images/women2.avif" alt="" />
-        <p>Lóvi is a skin care that feels like self care</p>
-      </section>
     </main>
     <footer class="footer">
-      <div class="footer__text">
-        Read our articles on Medium Instagram , and follow us on and , TikTok
-        LinkedIn
+      <div class="image__section">
+          <img src="./images/women2.avif" alt="" />
+          <p>Lóvi is a skin care that feels like self care</p>
       </div>
-      <img src="./images/download-app-store.png" class="header__download" />
-      <p>1459595</p>
-      <div class="footer__nav">
-        <div class="footer__options">
-          <p>2024 © Digital Skincare</p>
-          <a href="#"> Careers </a>
-          <a href="#"> Privacy policy </a>
-          <a href="#"> Money-back policy </a>
-          <a href="#"> Terms of use </a>
+      <div class="footer__content">
+        <div class="footer__text">
+          Read our articles on Medium Instagram , and follow us on and , TikTok
+          LinkedIn
         </div>
-        <p class="footer__options--badge">Built by the sea in Cyprus</p>
-      </div>
-    </footer>
+        <img src="./images/download-app-store.png" class="header__download" />
+        <p>1459595</p>
+        <div class="footer__nav">
+          <div class="footer__options">
+            <p>2024 © Digital Skincare</p>
+            <a href="#"> Careers </a>
+            <a href="#"> Privacy policy </a>
+            <a href="#"> Money-back policy </a>
+            <a href="#"> Terms of use </a>
+          </div>
+          <p class="footer__options--badge">Built by the sea in Cyprus</p>
+        </div>
+    </div>
+  </footer>
+    <div class="icon-site">
+      <img src="./images/logo-site.png" alt="">
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
