@@ -206,6 +206,7 @@ main {
       width: 50%;
       padding: 40px 0;
       gap: 0px;
+      justify-content: space-between;
 
       text-align: center;
 
@@ -490,7 +491,12 @@ main {
   max-width: 1200px;
 
   &__container {
-    @include mixins.container;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 56px;
+    gap: 40px;
+    padding: 120px 0 32px;
 
     & p {
       font-size: 52px;
@@ -499,8 +505,64 @@ main {
       line-height: 48px;
       letter-spacing: -1px;
       margin: 0;
+      padding: 0 64px;
     }
   }
+
+  &__carousel-wrapper {
+    overflow: hidden;
+  }
+
+  &__carousel {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    will-change: transform;
+    animation: carouselAnimation 20s linear infinite;
+    white-space: nowrap;
+  }
+
+  &__slide {
+      flex: 0 0 auto;
+      width: 350px;
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    cursor: pointer;
+    min-width: 0;
+    min-height: 0;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+@keyframes carouselAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100%));
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .questions {
@@ -512,12 +574,13 @@ main {
     display: flex;
     background-color: white;
     border-radius: 56px;
-    padding: 40px 48px;
+    padding: 120px 64px 64px;
+    justify-content: space-between;
   }
   &__title {
     font-size: 52px;
     font-weight: 400;
-    max-width: 580px;
+    max-width: 300px;
     line-height: 48px;
     letter-spacing: -1px;
     margin: 0;
@@ -526,13 +589,46 @@ main {
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
 
     &__title {
       font-size: 36px;
       line-height: 36px;
       letter-spacing: -1px;
       margin: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid #ddd;
+    padding: 32px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:first-child{
+      padding-top: 0px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: -1px;
+      margin: 0;
+      max-width: 540px;
+    }
+
+    &__toggle {
+      font-size: 36px;
     }
   }
 }
@@ -649,18 +745,18 @@ main {
 }
  */
 
- .footer {
+.footer {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  overflow: visible; /* Cambiamos a visible */
+  overflow: visible;
 }
 
 .image__section {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  z-index: 2; /* Aseguramos que la imagen esté encima */
+  z-index: 2;
 }
 
 .image__section img {
@@ -722,10 +818,6 @@ main {
 .footer__options--badge {
   color: blue;
 }
-
-
-
-
 
 .icon-site {
   position: fixed;
