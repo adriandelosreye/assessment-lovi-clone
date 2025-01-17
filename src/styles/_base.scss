@@ -1,0 +1,17 @@
+@use "./variables.scss" as *;
+
+@font-face {
+  font-family: $font-family;
+  src: url("../assets/fonts/font.woff2") format("woff2");
+}
+
+html {
+  margin: 0 auto;
+  font-family: $font-family;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: $background-color;
+}

@@ -1,0 +1,24 @@
+@use "./variables.scss" as *;
+@import "./_base.scss";
+@import "./_mixins.scss";
+@import "./_variables.scss";
+@import "./layouts/_main.scss";
+@import "./components/_header.scss";
+@import "./components/_hero.scss";
+@import "./components/_info.scss";
+@import "./components/_features.scss";
+@import "./components/_card.scss";
+@import "./components/_chat.scss";
+@import "./components/_testimonials.scss";
+@import "./components/_questions.scss";
+@import "./components/_state.scss";
+@import "./components/_footer.scss";
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
