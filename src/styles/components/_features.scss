@@ -1,11 +1,12 @@
 @use "../mixins.scss" as mixins;
+@use "../variables.scss" as *;
 
 .features {
   display: flex;
   flex-direction: column;
   gap: 6px;
   width: 100%;
-  max-width: 1200px;
+  max-width: $max-width;
 
   &--second {
     margin-top: 120px;

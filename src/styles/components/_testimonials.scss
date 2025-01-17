@@ -1,12 +1,14 @@
+@use "../variables.scss" as *;
+
 .testimonials {
   margin-top: 8px;
   width: 100%;
-  max-width: 1200px;
+  max-width: $max-width;
 
   &__container {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: $white;
     border-radius: 56px;
     gap: 40px;
     padding: 120px 0 32px;

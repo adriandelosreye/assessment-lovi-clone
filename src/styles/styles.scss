@@ -1,18 +1,18 @@
 @use "./variables.scss" as *;
-@import "./_base.scss";
-@import "./_mixins.scss";
-@import "./_variables.scss";
-@import "./layouts/_main.scss";
-@import "./components/_header.scss";
-@import "./components/_hero.scss";
-@import "./components/_info.scss";
-@import "./components/_features.scss";
-@import "./components/_card.scss";
-@import "./components/_chat.scss";
-@import "./components/_testimonials.scss";
-@import "./components/_questions.scss";
-@import "./components/_state.scss";
-@import "./components/_footer.scss";
+@use "./_base.scss";
+@use "./_mixins.scss";
+@use "./_variables.scss";
+@use "./layouts/_main.scss";
+@use "./components/_header.scss";
+@use "./components/_hero.scss";
+@use "./components/_info.scss";
+@use "./components/_features.scss";
+@use "./components/_card.scss";
+@use "./components/_chat.scss";
+@use "./components/_testimonials.scss";
+@use "./components/_questions.scss";
+@use "./components/_state.scss";
+@use "./components/_footer.scss";
 
 @keyframes rotate {
   0% {

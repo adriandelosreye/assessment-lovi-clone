@@ -1,11 +1,13 @@
+@use "../variables.scss" as *;
+
 .questions {
   width: 100%;
-  max-width: 1200px;
+  max-width: $max-width;
   margin-top: 8px;
 
   &__container {
     display: flex;
-    background-color: white;
+    background-color: $white;
     border-radius: 56px;
     padding: 120px 64px 64px;
     justify-content: space-between;

@@ -1,7 +1,9 @@
+@use "./variables.scss" as *;
+
 @mixin container {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: $white;
   border-radius: 56px;
   padding: 40px 48px;
 }

@@ -1,7 +1,9 @@
+@use "../variables.scss" as *;
+
 .image__section {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: $max-width;
   z-index: 2;
 
   & img {
@@ -13,7 +15,7 @@
   }
 
   & p {
-    color: white;
+    color: $white;
     position: absolute;
     bottom: 0;
     left: 5%;
@@ -26,7 +28,7 @@
 }
 
 .footer {
-  max-width: 1200px;
+  max-width: $max-width;
   margin: 0 auto;
   position: relative;
   overflow: visible;
@@ -36,7 +38,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    background-color: #f6f5f4;
+    background-color: $background-color;
     position: relative;
     margin-top: -250px;
     z-index: 1;
@@ -61,7 +63,7 @@
 
     &--sub {
       font-size: 18px;
-      color: #a4a3a0;
+      color: $secondary-color;
       margin-top: 8px;
     }
   }
@@ -73,12 +75,12 @@
 
   &__options {
     display: flex;
-    color: #a4a3a0;
+    color: $secondary-color;
     gap: 24px;
 
     & a {
       text-decoration: none;
-      color: #a4a3a0;
+      color: $secondary-color;
       align-content: center;
 
       &:hover {
